@@ -5,7 +5,7 @@ jobs:
     runs-on: macos-latest
     steps:
     - name: download
-    - uses: actions/download-artifact@v4
+      uses: actions/download-artifact@v4
        github-token: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
        repository:actions/toolkit
        run-id:1234
