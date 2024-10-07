@@ -1,11 +1,11 @@
 on: workflow_dispatch
-runs-on: macos-latest
+name: Download_Artifacts
 jobs:
-    download_artifacts:
+  download:
+    runs-on: macos-latest
     steps:
-      - uses: actions/download-artifact@v4
-        with:
-name: SCInsta
-github-token: ${{ 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 }} # token with actions:read permissions on target repo
-repository: actions/toolkit
- run-id:1234
+    - name: download
+    - uses: actions/download-artifact@v4
+       github-token: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
+       repository:actions/toolkit
+       run-id:1234
